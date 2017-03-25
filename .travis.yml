@@ -34,6 +34,7 @@ install:
   - cd tests
   - travis_retry elm-package install --yes
   - cd ..
+  - cat tests/elm-stuff/exact-dependencies.json
 
 script:
   #- elm-format --validate src tests examples readme-example
